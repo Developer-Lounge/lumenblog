@@ -35,7 +35,7 @@ function Register({ onSuccess }) {
     setIsSubmitting(true)
 
     try {
-      const response = await axios.post('/api/auth/register', {
+      await axios.post('/api/auth/register', {
         email: formData.email,
         password: formData.password,
       })
